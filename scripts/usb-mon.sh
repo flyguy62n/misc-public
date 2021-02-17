@@ -10,10 +10,10 @@ while true; do
 
 	# If the previous command didn't return any results, then increment MISSING, print dmesg and clear the dmesg log
 	if [ $? -eq 1 ]; then
-		MISSING=$(($MISSING+1))
-		FOUND=0
+		MISSING=$(($MISSING+1))		
 		if [ $MISSING = 1 ]; then
-			echo "Not found"
+			echo "Not found / Was found for $FOUND cycles"
+			FOUND=0
 			dmesg
 			dmesg -C
 		fi
