@@ -14,4 +14,3 @@ diff -y --suppress-common-lines /tmp/before.txt /tmp/after.txt
 
 echo "Removing /tmp files"
 rm /tmp/before.txt /tmp/after.txt
-
