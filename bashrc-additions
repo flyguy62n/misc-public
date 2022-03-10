@@ -33,7 +33,7 @@ if ! ss -a | grep -q "$GPG_AGENT_SOCK"; then
   #This needs to be the Windows path to the directory where GnuPG puts it's socket files.  It changed between Gpg4Win v3 and v4
   config_path="C\:/Users/RandyBartels/AppData/Local/gnupg"
   if test -x "$wsl2_ssh_pageant_bin"; then
-    (setsid nohup socat UNIX-LISTEN:"$GPG_AGENT_SOCK,fork" EXEC:"$wsl2_ssh_pageant_bin -gpgConfigBasepath ${config_path} -logfile /home/randy/wsl2-ssh-pageant.log -gpg S.gpg-agent" >/dev/null 2>&1 &)
+    (setsid nohup socat UNIX-LISTEN:"$GPG_AGENT_SOCK,fork" EXEC:"$wsl2_ssh_pageant_bin -gpgConfigBasepath ${config_path} -gpg S.gpg-agent" >/dev/null 2>&1 &)
   else
     echo >&2 "WARNING: $wsl2_ssh_pageant_bin is not executable."
   fi
