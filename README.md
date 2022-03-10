@@ -19,16 +19,17 @@ Nothing too exciting.  just some public SSH keys and a few scripts.
 | 4.   | `Windows`   | Update Windows 10 environment variables:  `GIT_SSH=C:\Program Files\PuTTY\plink.exe` |
 | 5.   | `Windows`   | Add `gpg-agent` to the `shell:startup` folder                                        |
 | 6.   | `PowerShell`| Edit the card to fetch the public key and trust the key ultimately                   |
-|      |             |  ```                                                                                 |
-|      |             |  gpg --card-edit                                                                     |
-|      |             |  fetch                                                                               |
-|      |             |  quit                                                                                |
-|      |             |                                                                                      |
-|      |             |                                                                                      |
-|      |             |  gpg --edit-key <key_id>                                                             |
-|      |             |  trust                                                                               |
-|      |             |  5                                                                                   |
-|      |             |  ```                                                                                 |
+|      |             |
+```
+gpg --card-edit
+fetch
+quit
+
+
+gpg --edit-key <key_id>
+trust
+5
+```                                                                                                         |
 | 7.   | `PowerShell`| Run `plink git@github.com`                                                           | 
 | 8.   | `WSL`       | Edit `~/.bashrc` with the contents in bashrc-additions                               |
 | 9.   | `PowerShell`| Run `wsl --shutdown`                                                                 |
