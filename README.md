@@ -4,6 +4,7 @@ Nothing too exciting.  just some public SSH keys and a few scripts.
 
 # YubiKey Notes
 [WSL2-SSH-PAGEANT](https://github.com/BlackReloaded/wsl2-ssh-pageant)
+[Ultimate Guide to Yubikey on WSL2](https://dev.to/dzerycz/the-ultimate-guide-to-yubikey-on-wsl2-part-1-5aed)
 
 1. Install Gpg4win
 2. See bashrc-additions and gpg-agent.conf above.
