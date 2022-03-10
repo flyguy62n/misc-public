@@ -30,6 +30,7 @@ This should work:
 8. Update Windows 10 environment variables:
 
   `GIT_SSH=C:\Program Files\PuTTY\plink.exe`
+
 9. PowerShell: Run `plink git@github.com`
 
 YubiKey should now be working for VSCode, GitHub, WSL and GPG -- in All the Things
